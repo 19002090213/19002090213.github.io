@@ -1,6 +1,7 @@
 <html>
     <bady>
         <script src="./stat.js"></script>
+        <script src='./underscore.js'></script>
         <script>
 
 var reduce=3;
@@ -15,6 +16,7 @@ var reduce=3;
             
             
 console.log(my.max(data));
+console.log(_.max(data,function(it){return it.credit}))
         
 
         </script>
