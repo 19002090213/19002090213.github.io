@@ -3,7 +3,64 @@
         <script src="./stat.js"></script>
         <script src='./underscore.js'></script>
         <script>
+var value=11;
+var initbalue=22;
+function addition(){
+    var value =initbalue;
+    return function add(x){
+        value=value+x;
+        if(value==99){
+    console.log(value); 
+    }   
+    }
+    
+} 
+var func=addition();
 
+func(33);
+func(44);
+
+ /*           
+function fn(){
+    var max=10;
+    return function bar(x){
+        max+=x;
+            console.log(max);
+        
+    };
+}
+
+var f1=fn();
+f1(15);
+f1(10)
+/*
+var a=10
+
+function fn(){
+    var b=20;
+    function bar(){
+        console.log(a+b);
+    }
+    return bar;
+    
+}
+var b=200;
+var x=fn();
+x();
+/*
+var x=10;
+
+function fn(){
+    console.log(x);
+}
+
+function show(f){
+    var x=20;
+    f();
+    
+}
+show(fn);
+/*
 var reduce=3;
     var data=[
     {name:'计算机安装与维护',credit:2}
@@ -18,7 +75,7 @@ var reduce=3;
 console.log(my.max(data));
 console.log(_.max(data,function(it){return it.credit}))
         
-
+*/
         </script>
     </bady>
 </html>        
